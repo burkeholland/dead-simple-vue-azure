@@ -4,7 +4,7 @@ This is a sample project to show you how you can run Vue as a static site on [Az
 
 ## Linux
 
-Node on Azure AppService for Linux does not come with a web server. This means we need to bring one of our own. The easiest way to do that is to use a Node web server like [serve](https://www.npmjs.com/package/serve). Azure uses [pm2](http://pm2.keymetrics.io/) behind the scenes, so we can start `serve` with the simplest possible `ecosystem.config.js` file.
+Node on Azure AppService for Linux does not come with a web server. This means we need to bring one of our own. The easiest way to do that is to use a Node web server like [serve](https://www.npmjs.com/package/serve). Azure uses [pm2](http://pm2.keymetrics.io/) behind the scenes, so we can start "serve" with the simplest possible `ecosystem.config.js` file.
 
 ```
 module.exports = {
@@ -24,7 +24,7 @@ Because we have a single-page application, we also need to tell serve to redirec
 }
 ```
 
-Both of these files need to be in the "dist" folder after a build, so put them in the "public" folder in the Vue project. Anything in the "public" folder gets copied directly to the root of "dist".
+Both of these files (`ecosystem.config.js` and `serve.json`) need to be in the "dist" folder after a build, so put them in the "public" folder in your Vue project. Anything in the "public" folder gets copied directly to the root of "dist".
 
 Now deploy the "dist" folder to Azure AppService.
 
