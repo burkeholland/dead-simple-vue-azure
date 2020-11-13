@@ -1,6 +1,6 @@
 # Dead simple Vue static site on Azure AppService
 
-This is a sample project to show you how you can run Vue as a static site on [Azure AppService](https://code.visualstudio.com/tutorials/app-service-extension/getting-started?WT.mc_id=personal-github-buhollan). Azure AppService offers both Linux and Windows hosting, so this project covers both.
+This is a sample project to show you how you can run Vue as a static site on [Azure AppService](https://code.visualstudio.com/tutorials/app-service-extension/getting-started?WT.mc_id=m365-0000-buhollan). Azure AppService offers both Linux and Windows hosting, so this project covers both.
 
 ## Linux
 
